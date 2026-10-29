@@ -51,14 +51,3 @@ without changing drive roots such as `C:/` into `C:`.
 Unicode case folding is not supported, and `?` matches a byte rather than a
 Unicode character. Paths are compared as text; aliases, symlinks, and dot
 segments are not resolved.
-
-## Later: kernel integration
-
-- Define the user/kernel communication protocol for rule updates.
-- Add a Windows minifilter to filter directory entries.
-- Handle Windows Unicode names and filesystem paths correctly.
-- Add kernel-safe memory management and synchronization.
-- Set up driver signing and verify the driver in a virtual machine.
-
-This version only reports matching decisions. It has no driver, Qt UI, or disk
-persistence.
